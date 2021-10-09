@@ -11,24 +11,41 @@
   <h1>Ejercicios de Programación en JavaScript</h1>
   <script>
     /* 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
-
+    function miFunction(texto) {
+      return texto.lenght
+    }
 
     /* 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
+    function miFunction(texto) {
+      let i = texto.length;
+      console.log(texto.substring(0, i / 2))
+    }
 
 
 
     /* 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe.
      miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
-
+    function miFunction(texto, separador) {
+      console.log(texto.split(separador))
+    }
 
 
     /* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo */
-
+    function miFunction(texto, n) {
+      for (let i = 0; i < n; i++)
+        console.log(texto)
+    }
 
 
     /* 5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH" */
 
-
+    const miFuncion = function (texto) {
+      let reverse = ''
+      for (let i = texto.length-1; i >= 0 ; i--) {
+        reverse = reverse + texto[i]
+      }
+      return reverse
+    }
 
     /* 6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
 
