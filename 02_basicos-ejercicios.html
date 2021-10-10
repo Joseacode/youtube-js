@@ -77,19 +77,40 @@
 
 
     /* 9) Programa una función que obtenga un numero aleatorio entre 501 y 600 */
-
+    const miFuncion = function () {
+      return Math.floor(Math.random() * (600 - 501) + 501)
+    }
 
 
     /* 10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), pe. miFuncion(2002) devolverá true  */
+    const miFuncion = function (texto) {
+      let textor = texto.split('').reverse().toString()
+      for (let i = 0; i < texto.length; i++) {
+        if (textor[i] === text[i])
+          return true
+        else return false
+      }
+    }
 
 
+    /* 11) Programa una función que calcule el factorial de un número
+     * (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n)
+     * pe. miFuncion(5) devolverá 120 */
+    const miFuncion = function (n) {
+      if (n === 1)
+        return 1
+      else
+        return n * miFuncion(n-1)
+    }
 
-    /* 11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120 */
 
-
-
-    /* 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true */
-
+    /* 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no
+     * pe. miFuncion(7) devolverá true */
+    const miFuncion = function (n) {
+      for (i = n - 1; i < 1; i--) {
+        
+      }
+    }
 
 
     /* 13) Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar */
